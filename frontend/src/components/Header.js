@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";     
 import logo from "../imgs/topbar_logo.png";
 
 const LoggedOutView = (props) => {
@@ -42,7 +42,7 @@ const LoggedInView = (props) => {
         <li className="nav-item">
           <Link to={`/@${props.currentUser.username}`} className="nav-link">
             <img
-              src={props.currentUser.image}
+              src={props.currentUser.user-img}
               className="user-pic pr-1"
               alt={props.currentUser.username}
             />
